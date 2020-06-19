@@ -1,0 +1,16 @@
+package multithreading;
+
+public class MainRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Coordinator is setting up the schedule");
+		Coordinator Patty = new Coordinator();
+
+		Patty.start_up();
+
+		Patty.end();
+	}
+
+}
