@@ -1,0 +1,14 @@
+package multithreading;
+
+public class ChildThread extends Thread {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

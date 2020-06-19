@@ -1,0 +1,15 @@
+package annotation.store;
+
+import annotation.laptop1st.ThinkPad;
+import annotation.laptop2nd.ThinkPad2;
+
+public class StoreRunner {
+
+	public static void main(String[] args) {
+
+		ThinkPad lappy = new ThinkPad();
+		lappy.floppy_disk();
+
+	ThinkPad2 lappPad2 = new ThinkPad2();}
+
+}

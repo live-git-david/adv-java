@@ -1,0 +1,12 @@
+package labexercises;
+
+public class CourseReaderRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+
+}

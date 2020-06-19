@@ -1,0 +1,32 @@
+package io;
+
+import java.io.FileOutputStream;
+
+class Person {
+    private String name;
+    private int age;
+    private char gender;
+
+    public Person(String name, int age, char gender) {
+        super();
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+  
+    }
+
+}
+public class WritePersonObject_ObjectOuputStream {
+	public static void main(String[] args) throws FileNotFoundException {
+	    //Step 2 Establish streams
+	    // access the file on the file system
+		
+	    File file = new File("persons.dat");
+	    try {
+	    FileOutputStream
+	    FileOutputStream fs = new FileOutputStream(file);
+	    } catch(FileNotFoundException e) {
+	    	
+	    }
+	}
+}

@@ -1,0 +1,18 @@
+package annotation.laptop3rd;
+
+public class Laptop {
+	@Override
+
+	@Deprecated
+	public void floppy_disk() {
+
+	}
+
+	public void cd_drive() {
+
+	}
+
+	public void usb_port() {
+
+	}
+}

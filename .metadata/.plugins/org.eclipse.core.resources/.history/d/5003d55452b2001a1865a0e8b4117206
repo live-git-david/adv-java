@@ -1,0 +1,23 @@
+package multithreading;
+
+public class EvenandOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 thread1 = new ();
+		 thread2 = new ();
+		thread1.setName("child thread 1");
+		thread2.setName("child thread 2");
+
+	}
+
+}
+
+	public class extends Thread{
+
+	@Override
+	public void run() {
+
+	}
+}

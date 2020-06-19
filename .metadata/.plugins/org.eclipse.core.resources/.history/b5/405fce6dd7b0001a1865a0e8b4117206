@@ -1,0 +1,15 @@
+package multithreading;
+
+import com.sun.org.apache.bcel.internal.generic.I2D;
+
+public class Participant extends Thread {
+private String ID;
+	@Override
+	public void run() {
+		practice();
+	}
+
+	public void practice() {
+
+	}
+}

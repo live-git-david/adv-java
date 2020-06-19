@@ -1,0 +1,35 @@
+package multithreading;
+
+public class Trainer extends Thread {
+
+	private String name;
+	private String email;
+
+	public Trainer(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
+
+	@Override
+	public void run() {
+		// trainer organizes its partipants
+		Participant[] participants = new Participant[5];
+
+		participants[0] = new Participant(0, "David");
+		participants[1] = new Participant(1, "Brian");
+		participants[2] = new Participant(0, "Dasha");
+		participants[3] = new Participant(1, "Arturo");
+		lecture();
+
+for(participants each : participants) {
+	}
+}
+
+	public void lecture() {
+
+		System.out.println("Today we will be going over the serve");
+		System.out.println("We will work on the toss. To toss make sure the ball is not spinning!");
+		System.out.println("Now you try!");
+	}
+}

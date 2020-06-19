@@ -1,0 +1,22 @@
+package labexercises;
+
+import java.io.Serializable;
+
+public class Course implements Serializable {
+
+	private String term;
+	private int courseID;
+	private String courseTitle;
+	private String instructor;
+	private String subjectArea;
+
+	public Course(String term, int courseID, String courseTitle, String instructor, String subjectArea) {
+
+		this.term = term;
+		this.courseID = courseID;
+		this.courseTitle = courseTitle;
+		this.instructor = instructor;
+		this.subjectArea = subjectArea;
+	}
+
+}

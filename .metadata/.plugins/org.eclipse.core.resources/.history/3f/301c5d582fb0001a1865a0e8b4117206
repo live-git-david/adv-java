@@ -1,0 +1,8 @@
+package annotation.laptop1st;
+
+public class Laptop {
+
+	public void floppy_disk() {
+
+	System.out.println("")}
+}

@@ -1,0 +1,49 @@
+package labexercises;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class CourseReaderRunner {
+
+	public static void main(String[] args) throws ClassNotFoundException, IOException {
+		// TODO Auto-generated method stub
+		Map<Integer, Course> courseSet = new HashMap<Integer, Course>();
+		courseSet = readFile();
+
+		System.out.println("Is the map empty? " + courseSet.isEmpty());
+		try {
+
+			Set<Map.Entry<Integer, Course>> st = courseSet.entrySet();
+
+			for (Map.Entry<Integer, Course> eachEntry : st) {
+
+				System.out.print(eachEntry.getKey() + ":");
+				System.out.println(eachEntry.getValue().toString());
+			}
+
+			System.out.println(
+					"------------------------------------------------------------------------------------------");
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("For loop went wrong or Set entry went wrong");
+		}
+
+	}
+
+	public static Map<Integer, Course> readFile() throws IOException, ClassNotFoundException {
+		Map<Integer, Course> set = new HashMap<Integer, Course>();
+		FileInputStream fileInputStream = new FileInputStream("Courses.txt");
+
+		try (ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
+			set = (Map<Integer, Course>) objectInputStream.readObject();
+		}
+
+		fileInputStream.close();
+
+		return set;
+	}
+}

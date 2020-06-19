@@ -1,0 +1,20 @@
+package labexercises;
+
+public class Course {
+
+	private String term;
+	private int courseID;
+	private String courseTitle;
+	private String instructor;
+	private String subjectArea;
+
+	public Course(String term, int courseID, String courseTitle, String instructor, String subjectArea) {
+		super();
+		this.term = term;
+		this.courseID = courseID;
+		this.courseTitle = courseTitle;
+		this.instructor = instructor;
+		this.subjectArea = subjectArea;
+	}
+
+}

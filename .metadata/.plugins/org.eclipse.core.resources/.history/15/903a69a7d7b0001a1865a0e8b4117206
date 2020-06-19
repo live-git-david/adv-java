@@ -1,0 +1,21 @@
+package multithreading;
+
+public class Participant extends Thread {
+	private String ID;
+	private String name;
+
+	public Participant(String iD, String name) {
+		ID = iD;
+		this.name = name;
+		System.out.println("Just joined the class!")
+	}
+
+	@Override
+	public void run() {
+		practice();
+	}
+
+	public void practice() {
+
+	}
+}

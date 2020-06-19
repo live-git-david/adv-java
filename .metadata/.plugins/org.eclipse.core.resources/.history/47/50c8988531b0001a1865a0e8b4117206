@@ -1,0 +1,13 @@
+package annotation.laptop2nd;
+
+public class Laptop {
+	
+	public void floppy_disk() {
+
+		System.out.println("This laptop doesn't have a floppy disk anymore");
+	}
+
+	public void cd_drive() {
+
+	}
+}

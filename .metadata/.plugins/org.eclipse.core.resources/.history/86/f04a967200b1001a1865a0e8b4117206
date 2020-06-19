@@ -1,0 +1,15 @@
+package labexercises;
+
+import java.io.FileInputStream;
+
+public class CourseReaderRunner {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void readFile() {
+		FileInputStream fileInputStream = new FileInputStream("Courses.txt");
+	}
+}

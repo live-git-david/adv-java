@@ -1,0 +1,35 @@
+package io;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.Scanner;
+
+public class ObjectOutputArraryStream {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		Scanner scanner = null;
+		Person people[] = new Person[5];
+		while (true) {
+			System.out.println("Please choose whet")
+		}
+
+		people[0] = new Person("David", 25, 'M');
+		people[1] = new Person("Brian", 24, 'M');
+		people[2] = new Person("Willy", 19, 'M');
+		people[3] = new Person("Johnny", 13, 'M');
+		writeArray(people);
+	}
+
+	public static void writeArray(Person people[]) throws IOException {
+		FileOutputStream fileOutputStream = new FileOutputStream("People_Array.txt");
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+		objectOutputStream.writeObject(people);
+
+		objectOutputStream.close();
+		fileOutputStream.close();
+	}
+
+}

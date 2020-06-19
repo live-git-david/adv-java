@@ -1,0 +1,17 @@
+package io;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class ObjectOutputArraryStream {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		FileOutputStream fileOutputStream = new FileOutputStream("People_Array.txt");
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+		
+	}
+
+}

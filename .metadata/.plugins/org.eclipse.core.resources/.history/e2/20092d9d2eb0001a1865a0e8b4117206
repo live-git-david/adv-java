@@ -1,0 +1,7 @@
+package annotation.laptop1st;
+
+public class Laptop {
+
+public void name() {
+	
+}}

@@ -1,0 +1,53 @@
+package io;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.Serializable;
+
+class Person implements Serializable {
+	private String name;
+	private int age;
+	private char gender;
+
+	public Person(String name, int age, char gender) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.gender = gender;
+
+	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + ", gender=" + gender + "]";
+	}
+
+}
+
+public class ReadPersonObject_ObjectInputStream {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// Step 2 Establish streams
+		// access the file on the file system
+		File file = new File("person.dat");
+		try {
+			FileInputStream fileInputStream = new FileInputStream(file);
+			Person person = null;
+
+			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+			System.out.println("Written Object" + person);
+			person = ObjectInputStream.readObject();
+
+		} catch (FileNotFoundException e) {
+			System.out.println(e);
+
+		} catch (IOException e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+
+	}
+}

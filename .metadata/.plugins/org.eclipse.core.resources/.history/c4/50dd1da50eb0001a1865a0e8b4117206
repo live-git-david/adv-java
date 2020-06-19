@@ -1,0 +1,15 @@
+package io;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class ObjectOutputArraryStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		FileOutputStream fileOutputStream = new FileOutputStream("People_Array.txt");
+ObjectOutputStream 
+	}
+
+}

@@ -1,0 +1,15 @@
+package multithreading;
+
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
+
+public class Participant extends Thread {
+
+IF_ACMPEQ	@Override
+	public void run() {
+		practice();
+	}
+
+	public void practice() {
+
+	}
+}

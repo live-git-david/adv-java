@@ -1,0 +1,16 @@
+package io;
+
+import java.io.DataOutputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class DataPersonOutput {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		FileOutputStream fs = new FileOutputStream("dataOutput.txt");
+		DataOutputStream dout = new DataOutputStream(fs);
+
+		Person person = new Person("David", 25, 'M');	}
+
+}

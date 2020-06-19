@@ -1,0 +1,33 @@
+package io;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+
+public class WritePersonObject_ObjectOuputStream {
+	public static void main(String[] args) throws FileNotFoundException {
+		// Step 2 Establish streams
+		// access the file on the file system
+		File file = new File("person.dat");
+		try {
+			FileOutputStream fileOutputStream = new FileOutputStream(file);
+			Person person = new Person("David", 18, 'M');
+
+			ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+			System.out.println("Written Object" + person);
+			objectOutputStream.writeObject(person);
+
+		} catch (FileNotFoundException e) {
+			System.out.println(e);
+
+		} catch (IOException e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+
+	}
+}

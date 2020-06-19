@@ -1,0 +1,14 @@
+package labexercises;
+
+import java.util.ArrayList;
+
+public class MainRunner {
+
+	public static void main(String[] args) {
+
+		ArrayList<Course> courses = new ArrayList<Course>();
+
+		Course c1 = new Course("Winter 2019", 0, "Physics9D", "Mr. Blackwell", "Physics");
+Course c2 = new Course("Fall 2013", 1, "ECS30", "Butner", subjectArea)	}
+
+}

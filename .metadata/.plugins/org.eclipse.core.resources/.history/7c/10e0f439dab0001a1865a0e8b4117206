@@ -1,0 +1,21 @@
+package multithreading;
+
+public class Coordinator {
+	public void start_up() {
+		// call trainer
+		Trainer trainer = new Trainer("Mark", "markrob@yahoo.com");
+		// organizes participants
+//		Participant[] participants = new Participant[5];
+//
+//		participants[0] = new Participant(0, "David");
+//		participants[1] = new Participant(1, "Brian");
+//		participants[2] = new Participant(0, "Dasha");
+//		participants[3] = new Participant(1, "Arturo");
+
+		trainer.start();
+	}
+
+	public void end() {
+System.out.println("");
+	}
+}

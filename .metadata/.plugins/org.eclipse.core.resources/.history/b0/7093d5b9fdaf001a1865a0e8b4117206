@@ -1,0 +1,24 @@
+package io;
+
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class Dataperson2Input {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		FileInputStream fs = new FileInputStream("dataOutput.txt");
+		DataInputStream din = new DataInputStream(fs);
+
+		Person2 person2 = null;
+		int ID = din.readInt();
+		int age = din.readInt();
+		float salary = din.readFloat();
+		din.close();
+		System.out.println("Age: " + ID + " " + )
+		System.out.println("Success!");
+
+	}
+
+}

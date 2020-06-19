@@ -1,0 +1,15 @@
+package multithreading;
+
+public class ChildThread extends Thread {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		if (Thread.currentThread().getName().equals("child thread 1"))
+			try {
+
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+	}
+}

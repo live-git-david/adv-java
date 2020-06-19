@@ -1,0 +1,7 @@
+package multithreading;
+
+import com.sun.tools.javadoc.main.Start;
+
+public class Coordinator {
+Start
+}

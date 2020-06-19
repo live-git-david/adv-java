@@ -1,0 +1,18 @@
+package multithreading;
+
+import com.sun.beans.introspect.PropertyInfo.Name;
+
+public class Participant extends Thread {
+	private String ID;
+
+	private String name
+
+	@Override
+	public void run() {
+		practice();
+	}
+
+	public void practice() {
+
+	}
+}

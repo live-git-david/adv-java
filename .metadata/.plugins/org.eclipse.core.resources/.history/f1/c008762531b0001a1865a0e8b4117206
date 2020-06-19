@@ -1,0 +1,12 @@
+package annotation.laptop3rd;
+
+public class Laptop {
+
+	public void floppy_disk() {
+
+	}
+
+	public void name() {
+
+	}
+}

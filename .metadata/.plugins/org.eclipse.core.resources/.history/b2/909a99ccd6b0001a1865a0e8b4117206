@@ -1,0 +1,22 @@
+package multithreading;
+
+public class Trainer extends Thread {
+
+	public Trainer(String name, String email) {
+		super();
+		Name = name;
+		this.email = email;
+	}
+
+	private String Name;
+	private String email;
+
+	@Override
+	public void run() {
+		lecture();
+	}
+
+	public void lecture() {
+
+	}
+}

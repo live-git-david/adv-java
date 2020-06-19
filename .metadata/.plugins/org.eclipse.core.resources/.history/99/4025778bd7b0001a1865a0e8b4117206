@@ -1,0 +1,22 @@
+package multithreading;
+
+public class Participant extends Thread {
+	private String ID;
+
+	private String name;
+
+	public Participant(String iD, String name) {
+		super();
+		ID = iD;
+		this.name = name;
+	}
+
+	@Override
+	public void run() {
+		practice();
+	}
+
+	public void practice() {
+
+	}
+}

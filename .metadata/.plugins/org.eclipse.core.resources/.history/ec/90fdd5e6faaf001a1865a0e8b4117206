@@ -1,0 +1,26 @@
+package io;
+
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+public class DataPersonInput {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		FileInputStream fs = new FileInputStream("dataOutput.txt");
+		DataOutputStream dout = new DataOutputStream(fs);
+
+		Person person = new Person("David", 25, 'M');
+		dout.writeChars(person.getName());
+
+		dout.writeLong(person.getAge());
+		dout.writeChar(person.getGender());
+		dout.flush();
+		dout.close();
+
+		System.out.println("Success!");
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package io;
+
+public class Person2 {
+	private int personID;
+	private int age;
+	private float salary;
+
+	public Person2(int personID, int age, float salary) {
+		this.personID = personID;
+		this.age = age;
+		this.salary = salary;
+	}
+
+	public int getPersonID() {
+		return personID;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public float getSalary() {
+		return salary;
+	}
+
+}

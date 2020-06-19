@@ -1,0 +1,13 @@
+package multithreading;
+
+public class Coordinator {
+	public void start_up() {
+		// call trainer
+		Trainer trainer = new Trainer("Mark", "markrob@yahoo.com");
+
+	}
+
+	public void end() {
+
+	}
+}

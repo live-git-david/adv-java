@@ -1,0 +1,6 @@
+package labexercises;
+
+public class CloneExercise implements Cloneable {
+	private String first_name;
+	private String last_name
+}

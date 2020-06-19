@@ -1,0 +1,12 @@
+package multithreading;
+
+public class Trainer extends Thread {
+
+	private @Override public void run() {
+		lecture();
+	}
+
+	public void lecture() {
+
+	}
+}

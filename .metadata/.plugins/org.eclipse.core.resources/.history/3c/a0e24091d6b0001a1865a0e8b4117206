@@ -1,0 +1,11 @@
+package multithreading;
+
+public class Coordinator {
+	public void start_up() {
+		// call trainer
+Trainer trainer = new 	}
+
+	public void end() {
+
+	}
+}

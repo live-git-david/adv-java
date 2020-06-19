@@ -1,0 +1,40 @@
+package labexercises;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+import com.sun.swing.internal.plaf.metal.resources.metal;
+
+public class CourseReaderRunner {
+
+	public static void main(String[] args) throws ClassNotFoundException, IOException {
+		// TODO Auto-generated method stub
+		Map<Integer, Course> courseSet = new HashMap<Integer, Course>();
+		readFile(courseSet);
+	}
+
+	public static void readFile(Map<Integer, Course> set) throws IOException, ClassNotFoundException {
+		FileInputStream fileInputStream = new FileInputStream("Courses.txt");
+
+		try (ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
+			set = (Map<Integer, Course>) objectInputStream.readObject();
+		}
+
+		try {
+
+			Set<Map.Entry<Integer, Course>> st = set.entrySet();
+
+			for (Map.Entry<Integer, Course> eachEntry : st) {
+
+				System.out.print(eachEntry.getKey() + ":");
+				System.out.println();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

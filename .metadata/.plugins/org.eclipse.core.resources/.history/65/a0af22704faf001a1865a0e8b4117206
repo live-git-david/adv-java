@@ -1,0 +1,9 @@
+package io;
+
+import java.io.File;
+
+public class ReadObject {
+	public static void main(String[] args) {
+		File
+	}
+}

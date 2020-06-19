@@ -1,0 +1,17 @@
+package io;
+
+import java.io.FileOutputStream;
+
+public class DataOutputStream {
+
+	public DataOutputStream(FileOutputStream fileOutputStream) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DataOutputStream dout = new DataOutputStream(new FileOutputStream("file.dat"));
+	}
+
+}

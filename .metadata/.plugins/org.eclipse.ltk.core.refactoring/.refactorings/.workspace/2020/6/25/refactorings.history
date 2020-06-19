@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;AdvanceJava&apos; to &apos;jl-advjava-master&apos;&#x0A;- Original element: &apos;AdvanceJava&apos;&#x0A;- Renamed element: &apos;AdvanceJava&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;AdvanceJava&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=AdvanceJava" name="jl-advjava-master" references="true" stamp="1592250538962" version="1.0"/>
+</session>

@@ -1,0 +1,25 @@
+package multithreading;
+
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
+
+public class Participant extends Thread {
+	private int ID;
+	private String name;
+
+	public Participant(int iD, String name) {
+		ID = iD;
+		this.name = name;
+		System.out.println("Hello Everyone! My name is " + name + " ID " + IF_ACMPE);
+	}
+
+	@Override
+	public void run() {
+		practice();
+	}
+
+	public void practice() {
+
+		System.out.println("This is a good workout");
+		System.out.println("Yay got my toss in!");
+	}
+}

@@ -1,0 +1,14 @@
+package multithreading;
+
+import com.sun.beans.introspect.PropertyInfo.Name;
+
+public class Trainer extends Thread {
+
+	private String Name;@Override public void run() {
+		lecture();
+	}
+
+	public void lecture() {
+
+	}
+}

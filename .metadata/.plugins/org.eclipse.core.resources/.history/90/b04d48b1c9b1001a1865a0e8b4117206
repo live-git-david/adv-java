@@ -1,0 +1,12 @@
+package labexercises;
+
+public class CloneRunner {
+
+	public static void main(String[] args) {
+
+		CloneExercise c1 = new CloneExercise();
+		CloneExercise c2 = (CloneExercise) c1.clone();
+		
+	}
+
+}

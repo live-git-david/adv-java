@@ -1,0 +1,13 @@
+package annotation.store;
+
+import annotation.laptop1st.Laptop;
+
+public class StoreRunner {
+
+	public static void main(String[] args) {
+
+		Laptop lappy = new Laptop();
+		annota
+	}
+
+}

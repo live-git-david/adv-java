@@ -1,0 +1,7 @@
+package annotation.laptopInterface;
+
+public interface Usb {
+	public void usb_port() {
+
+	}
+}

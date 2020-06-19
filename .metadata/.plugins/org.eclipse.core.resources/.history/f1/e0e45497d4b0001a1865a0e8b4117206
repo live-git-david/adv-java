@@ -1,0 +1,7 @@
+package multithreading;
+
+public class Coordinator {
+	public void start() {
+
+	}
+}

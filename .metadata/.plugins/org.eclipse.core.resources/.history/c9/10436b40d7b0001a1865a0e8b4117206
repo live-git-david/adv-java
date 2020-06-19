@@ -1,0 +1,15 @@
+package multithreading;
+
+import apple.laf.JRSUIConstants.Size;
+
+public class Coordinator {
+	public void start_up() {
+		// call trainer
+		Trainer trainer = new Trainer("Mark", "markrob@yahoo.com");
+
+	Participant[] participants = new Participant[Size]}
+
+	public void end() {
+
+	}
+}

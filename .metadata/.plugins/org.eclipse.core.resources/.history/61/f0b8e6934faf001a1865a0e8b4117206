@@ -1,0 +1,15 @@
+package io;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+public class ReadObject {
+	public static void main(String[] args) {
+		File file = new File("person.dat");
+		try {
+			FileInputStream
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

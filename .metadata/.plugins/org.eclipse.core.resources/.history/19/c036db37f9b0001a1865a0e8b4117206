@@ -1,0 +1,16 @@
+package labexercises;
+
+import java.util.HashMap;
+
+public class MainRunner {
+
+	public static void main(String[] args) {
+
+	Map<int, Course> courseSet = new HashMap<int, Course>();	
+	Course c1 = new Course("Winter 2019", 0, "Physics9D", "Blackwell", "Physics");
+		Course c2 = new Course("Fall 2013", 1, "ECS30", "Butner", "Computer Science");
+		Course c1 = new Course("Winter 2019", 2, "Physics9D", "Blackwell", "Physics");
+		Course c2 = new Course("Fall 2013", 3, "ECS30", "Butner", "Computer Science");
+	}
+
+}

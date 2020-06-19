@@ -1,0 +1,22 @@
+package multithreading;
+
+public class EvenandOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Child thread1 = new Child();
+		Child thread2 = new Child();
+		thread1.setName("child 1");
+	}
+
+}
+
+public class Child extends Thread {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+}

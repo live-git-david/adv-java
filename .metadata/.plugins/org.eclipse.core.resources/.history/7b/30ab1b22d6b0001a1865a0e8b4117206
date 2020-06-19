@@ -1,0 +1,9 @@
+package multithreading;
+
+public class Participant extends Thread {
+	
+
+	public void practice() {
+
+	}
+}

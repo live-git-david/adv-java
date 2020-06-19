@@ -1,0 +1,7 @@
+package annotation.laptop1st;
+
+import annotation.laptopInterface.Floppy;
+
+public class Laptop implements Floppy {
+
+}

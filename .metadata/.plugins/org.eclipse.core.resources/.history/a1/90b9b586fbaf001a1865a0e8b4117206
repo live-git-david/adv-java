@@ -1,0 +1,11 @@
+package io;
+
+public class Person2 {
+
+	public Person2() {
+		// TODO Auto-generated constructor stub
+		private int personID;
+
+		private int age;
+	}
+}

@@ -1,0 +1,74 @@
+package labexercises;
+
+import java.util.Arrays;
+
+public class CloneExercise implements Cloneable {
+	private String first_name;
+	private String last_name;
+	private int[] nums = new int[5];
+	private int age;
+
+	public CloneExercise() {
+		this.first_name = "David";
+		this.last_name = "Morales";
+		this.age = 24;
+
+		this.nums[0] = 1;
+	}
+
+	public CloneExercise(
+
+			String first_name, String last_name, int age) {
+		this.first_name = first_name;
+		this.last_name = last_name;
+		this.age = age;
+	}
+
+	@Override
+	public Object clone() {
+		try {
+			CloneExercise c1 = (CloneExercise) super.clone();
+
+		c1.setNums(nums);} catch (Exception e) {
+			return null;
+		}
+	}
+
+	public String getFirst_name() {
+		return first_name;
+	}
+
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
+	}
+
+	public String getLast_name() {
+		return last_name;
+	}
+
+	public void setLast_name(String last_name) {
+		this.last_name = last_name;
+	}
+
+	public int[] getNums() {
+		return nums;
+	}
+
+	public void setNums(int[] nums) {
+		this.nums = nums;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public String toString() {
+		return "CloneExercise [first_name=" + first_name + ", last_name=" + last_name + ", nums="
+				+ Arrays.toString(nums) + ", age=" + age + "]";
+	}
+}

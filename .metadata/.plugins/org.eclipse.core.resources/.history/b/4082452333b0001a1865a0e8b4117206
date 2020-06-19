@@ -1,0 +1,20 @@
+package annotation.laptop3rd;
+
+import annotation.laptopInterface.Cd;
+import annotation.laptopInterface.Floppy;
+
+public class Laptop implements Floppy, Cd{
+	@Deprecated
+	public void floppy_disk() {
+
+	}
+
+	@Deprecated
+	public void cd_drive() {
+
+	}
+
+	public void usb_port() {
+
+	}
+}

@@ -1,0 +1,9 @@
+package labexercises;
+
+public class Course {
+
+	private String term;
+	private int courseID;
+	private String courseTitle;
+	private String instructString
+}

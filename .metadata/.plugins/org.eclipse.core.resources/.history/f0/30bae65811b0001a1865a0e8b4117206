@@ -1,0 +1,56 @@
+package io;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.Scanner;
+
+public class ObjectOutputArraryStream {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+		Scanner scanner = null;
+		Person people[] = new Person[5];
+		people[0] = new Person("David", 25, 'M');
+		people[1] = new Person("Brian", 24, 'M');
+		people[2] = new Person("Willy", 19, 'M');
+		people[3] = new Person("Johnny", 13, 'M');
+		while (true) {
+			System.out.println("Please choose whether you want to write to a file or read from?(W or R)");
+
+			scanner = new Scanner(System.in);
+			String userInput = scanner.nextLine();
+			switch (userInput.toUpperCase().charAt(0)) {
+			case 'W':
+				writeArray(people);
+				break;
+			case 'R':
+
+			default:
+				break;
+			}
+		}
+
+		scanner.close();
+	}
+
+	public static void writeArray(Person people[]) throws IOException {
+		FileOutputStream fileOutputStream = new FileOutputStream("People_Array.txt");
+		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+		objectOutputStream.writeObject(people);
+
+		objectOutputStream.close();
+		fileOutputStream.close();
+	}
+
+	public static void readArray() throws IOException {
+
+		FileInputStream fileInputStream = new FileInputStream("People_Array.txt");
+		ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+		Person people[] = new Person[5];
+objectInputStream	}
+
+}
