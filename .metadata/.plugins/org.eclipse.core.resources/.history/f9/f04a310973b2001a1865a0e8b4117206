@@ -1,0 +1,10 @@
+package lambdaExpression;
+
+public class LambdaDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	Operation addition = (int a, int b) -> a + b;}
+
+}
