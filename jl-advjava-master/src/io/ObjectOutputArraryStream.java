@@ -1,6 +1,7 @@
 package io;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -33,7 +34,7 @@ public class ObjectOutputArraryStream {
 
 	}
 
-	public static void writeArray(Scanner scanner) throws IOException {
+	public static void writeArray(Scanner scanner) {
 
 		/* Ask the user how many persons they would like to write to the file */
 		System.out.println("How many persons would you like to write?");
@@ -56,9 +57,26 @@ public class ObjectOutputArraryStream {
 		}
 
 		// Write the people array to the file
-		FileOutputStream fileOutputStream = new FileOutputStream("People_Array.txt");
-		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-		objectOutputStream.writeObject(people);
+		FileOutputStream fileOutputStream;
+		try {
+			fileOutputStream = new FileOutputStream("People_Array.txt");
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		ObjectOutputStream objectOutputStream;
+		try {
+			objectOutputStream = new ObjectOutputStream(fileOutputStream);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			objectOutputStream.writeObject(people);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		objectOutputStream.close();
 		fileOutputStream.close();

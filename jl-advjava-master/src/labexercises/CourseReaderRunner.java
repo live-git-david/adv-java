@@ -6,6 +6,8 @@ import java.io.ObjectInputStream;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.CourseBusiness.Course;
+
 public class CourseReaderRunner {
 
 	public static void main(String[] args) throws ClassNotFoundException, IOException {
